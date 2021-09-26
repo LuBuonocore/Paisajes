@@ -1,0 +1,687 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+/*titulos y subtitulos*/
+h1 {
+  color: black;
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 50px;
+  font-weight: lighter; }
+
+h2 {
+  color: #091a4d;
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 35px;
+  margin-top: 15px; }
+
+h3 {
+  color: black;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: bolder; }
+
+.subtitulo {
+  color: white;
+  font-size: 50px;
+  font-weight: lighter;
+  text-align: center;
+  font-family: 'EB Garamond', serif; }
+
+.tituloSecciones {
+  margin-top: 35px;
+  margin-bottom: 35px; }
+
+.centrado {
+  text-align: center; }
+
+#centrado {
+  text-align: center; }
+
+p {
+  font-size: 18px;
+  font-family: 'Noto Sans TC', sans-serif;
+  text-align: justify; }
+
+.tamañoFooter {
+  font-size: 20px; }
+
+.tituloPrincipal {
+  font-size: 100px;
+  text-align: left;
+  font-family: 'Poiret One', cursive;
+  color: black; }
+
+.parrafo {
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif; }
+
+/*Diseño del NavBar*/
+#linkColor:hover {
+  color: #03ad03; }
+
+#colorNav {
+  background-color: #0808080d; }
+
+.navbar-collapse {
+  justify-content: right; }
+
+/*Cierre del NavBar*/
+/*Pie de pagina*/
+footer {
+  background-color: #121a01;
+  width: 100%;
+  height: 190px; }
+  footer .pieDisplay {
+    color: #60604d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%; }
+    footer .pieDisplay #tamañoFooter {
+      font-size: 15px; }
+    footer .pieDisplay .color {
+      color: #60604d; }
+    footer .pieDisplay .contactoGrid {
+      height: 100px;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "titulo titulo" "iconD direccion" "iconT telefono" "iconM  mail"; }
+      footer .pieDisplay .contactoGrid .telefono {
+        grid-area: telefono;
+        padding-left: 10px; }
+      footer .pieDisplay .contactoGrid .tituloC {
+        grid-area: titulo;
+        font-size: 20px;
+        text-align: center; }
+      footer .pieDisplay .contactoGrid .direccion {
+        grid-area: direccion;
+        padding-left: 10px; }
+      footer .pieDisplay .contactoGrid .mail {
+        grid-area: mail;
+        padding-left: 10px; }
+      footer .pieDisplay .contactoGrid #iconD {
+        grid-area: iconD; }
+      footer .pieDisplay .contactoGrid #iconT {
+        grid-area: iconT; }
+      footer .pieDisplay .contactoGrid #iconM {
+        grid-area: iconM; }
+      footer .pieDisplay .contactoGrid #iconD:hover {
+        color: green;
+        cursor: pointer; }
+      footer .pieDisplay .contactoGrid #iconT:hover {
+        color: green;
+        cursor: pointer; }
+      footer .pieDisplay .contactoGrid #iconM:hover {
+        color: green;
+        cursor: pointer; }
+    footer .pieDisplay .redesFlex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%; }
+      footer .pieDisplay .redesFlex .botonRedes {
+        font-size: 30px; }
+      footer .pieDisplay .redesFlex .botonRedes:hover {
+        color: green;
+        cursor: pointer; }
+    footer .pieDisplay .navFooter {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bolder;
+      font-size: 15px;
+      padding-left: 20px; }
+      footer .pieDisplay .navFooter .list {
+        list-style: none; }
+        footer .pieDisplay .navFooter .list #lineaFooter {
+          text-decoration: none; }
+
+.encontranos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  width: 30%; }
+
+/*Cierre de pie de pagina*/
+/*Diseño Home*/
+.home {
+  width: 100%; }
+  .home .seccionP {
+    background: url(../assets/home/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; }
+    .home .seccionP__contenedor {
+      margin-bottom: 80px; }
+  .home .seccionS {
+    background-color: #68a368;
+    height: 130px;
+    width: 30%;
+    position: relative;
+    bottom: 70px;
+    float: right;
+    right: 250px; }
+  .home .seccionT {
+    background-color: #273b27;
+    height: 500px;
+    width: 100%; }
+    .home .seccionT #servicioDisplay {
+      color: #ece8e8;
+      height: 300px;
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 20% 20% 20%;
+      grid-template-rows: 20% 60%;
+      grid-template-areas: "iconUno  iconDos iconTres" "textoUno  textoDos  textoTres";
+      justify-items: center;
+      justify-content: space-between; }
+      .home .seccionT #servicioDisplay #iconDiseño {
+        grid-area: iconUno;
+        font-size: 40px; }
+      .home .seccionT #servicioDisplay #iconDiseño:hover {
+        color: green;
+        cursor: pointer; }
+      .home .seccionT #servicioDisplay #iconCalendario {
+        grid-area: iconDos;
+        font-size: 40px; }
+      .home .seccionT #servicioDisplay #iconCalendario:hover {
+        color: green;
+        cursor: pointer; }
+      .home .seccionT #servicioDisplay #iconPlanta {
+        grid-area: iconTres;
+        font-size: 40px; }
+      .home .seccionT #servicioDisplay #iconPlanta:hover {
+        color: green;
+        cursor: pointer; }
+      .home .seccionT #servicioDisplay #textoDiseño {
+        grid-area: textoUno; }
+      .home .seccionT #servicioDisplay #textoCalendario {
+        grid-area: textoDos; }
+      .home .seccionT #servicioDisplay #textoPlata {
+        grid-area: textoTres; }
+
+/*Proyectos*/
+.proyectoDisplay {
+  height: 800px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 40% 40%;
+  grid-template-areas: "M R" "F A";
+  justify-content: space-evenly;
+  align-items: center; }
+  .proyectoDisplay #Mediterraneo {
+    grid-area: M;
+    height: 276px; }
+  .proyectoDisplay #Romantico {
+    grid-area: R;
+    height: 276px; }
+  .proyectoDisplay #Fenshui {
+    grid-area: F;
+    height: 276px; }
+  .proyectoDisplay #Arabe {
+    grid-area: A;
+    height: 276px; }
+  .proyectoDisplay #imgProyectos {
+    height: 275px; }
+  .proyectoDisplay #parrafo {
+    font-size: 15px; }
+
+.sectionTabla {
+  background-color: #487a48;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  .sectionTabla #tabla {
+    height: 300px;
+    width: 80%;
+    padding-top: 50px; }
+
+/*Cierre de proyectos*/
+/*Diseño Comunidad*/
+.comunidadFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1400px; }
+  .comunidadFlex .tituloFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.445);
+    background-color: white;
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    .comunidadFlex .tituloFlex .divT {
+      width: 50%; }
+    .comunidadFlex .tituloFlex .divImg {
+      width: 40%; }
+      .comunidadFlex .tituloFlex .divImg .imgTitulo {
+        width: 100%; }
+
+#seccionComunidad, #seccionComunidadDos, #seccionComunidadTres {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  height: 550px;
+  box-shadow: 0px 0px 5px 0px rgba(128, 82, 82, 0.288);
+  margin-bottom: 30px;
+  background-color: #88ad88; }
+  #seccionComunidad .videos, #seccionComunidadDos .videos, #seccionComunidadTres .videos {
+    width: 40%;
+    height: 300px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    padding: 10px 0px 10px 0px; }
+
+#seccionComunidadDos {
+  background-color: #68a368; }
+
+#seccionComunidadTres {
+  background-color: #5e775e; }
+
+/*Cierre de comunidad*/
+/*Nosotros*/
+.sectionColumnas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto; }
+  .sectionColumnas .divFila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+
+#sectionN {
+  margin-bottom: 40px;
+  width: 30%;
+  box-shadow: 0px 0px 5px 0px rgba(65, 46, 46, 0.288); }
+
+.imgNosotros {
+  width: 82%;
+  height: 350px; }
+
+/*Cierre de Nosotros*/
+/*Contacto*/
+.contactoFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .contactoFlex .sectionC {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 400px;
+    box-shadow: 0px 0px 5px 0px rgba(128, 82, 82, 0.288);
+    margin: auto; }
+    .contactoFlex .sectionC .mapa {
+      width: 50%;
+      height: 300px; }
+    .contactoFlex .sectionC .encontranosGrid {
+      height: 200px;
+      width: 50%;
+      display: grid;
+      grid-template-columns: 10% 90%;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "titulo titulo" "iconD direccion" "iconT telefono" "iconM  mail"; }
+      .contactoFlex .sectionC .encontranosGrid .telefono {
+        grid-area: telefono;
+        padding-left: 10px; }
+      .contactoFlex .sectionC .encontranosGrid .tituloC {
+        grid-area: titulo;
+        font-size: 20px;
+        text-align: center; }
+      .contactoFlex .sectionC .encontranosGrid .direccion {
+        grid-area: direccion;
+        padding-left: 10px; }
+      .contactoFlex .sectionC .encontranosGrid .mail {
+        grid-area: mail;
+        padding-left: 10px; }
+      .contactoFlex .sectionC .encontranosGrid #iconD {
+        grid-area: iconD; }
+      .contactoFlex .sectionC .encontranosGrid #iconT {
+        grid-area: iconT; }
+      .contactoFlex .sectionC .encontranosGrid #iconM {
+        grid-area: iconM; }
+      .contactoFlex .sectionC .encontranosGrid #iconD:hover {
+        color: green;
+        cursor: pointer; }
+      .contactoFlex .sectionC .encontranosGrid #iconT:hover {
+        color: green;
+        cursor: pointer; }
+      .contactoFlex .sectionC .encontranosGrid #iconM:hover {
+        color: green;
+        cursor: pointer; }
+  .contactoFlex .sectionCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 60px 0px 60px 0px;
+    box-shadow: 0px 0px 5px 0px rgba(128, 82, 82, 0.288);
+    width: 50%; }
+    .contactoFlex .sectionCon .sectionInfo {
+      width: 75%;
+      margin-top: 15px;
+      margin-left: 15px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column; }
+
+/*Cierre de contacto*/
+/*icono de wpp*/
+.wpp {
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  right: 20px;
+  bottom: 10px; }
+  .wpp .imgWpp {
+    width: 45px;
+    height: 45px; }
+  .wpp .imgWpp:hover {
+    transform: scale(1.1);
+    transition: 0.3s; }
+
+/*Cierre de icono de wpp*/
+/*Celular*/
+@media only screen and (max-width: 600px) {
+  /*Encabezado*/
+  #tamaño {
+    font-size: 11px; }
+  .logo {
+    height: 35px; }
+  /*Cierre de encabezado*/
+  /*Titulos y subtitulos*/
+  h1 {
+    font-size: 35px; }
+  h2 {
+    font-size: 15px; }
+  h3 {
+    font-size: 25px;
+    text-align: center; }
+  /*Home*/
+  .home {
+    height: 900px; }
+  .subtitulo {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter; }
+  .tituloTamaño {
+    font-size: 25px; }
+  .seccionP {
+    margin-left: none;
+    height: 400px; }
+  .imgWpp {
+    height: 30px;
+    width: 30px; }
+  .wpp {
+    height: 35px;
+    width: 35px; }
+  /*Cierre de home*/
+  /*Proyectos*/
+  .proyectoDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 2000px;
+    width: 90%;
+    margin-left: 15px; }
+  #proyectoMedia {
+    height: 430px;
+    width: 100% !important; }
+  #imgProyecto {
+    height: 250px; }
+  #anchoC {
+    width: 50%;
+    height: 250px; }
+  #parrafo {
+    font-size: 10px !important;
+    text-align: left; }
+  #carouselExampleSlidesOnly {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  /*Cierre de proyectos*/
+  /*Nosotros*/
+  .divFila {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #sectionN {
+    width: 80%; }
+  .imgNosotros {
+    height: 250px;
+    width: 70%; }
+  /*Cierre de Nosotros*/
+  /*Comunidad*/
+  .comunidadFlex {
+    height: auto; }
+  .tituloFlex {
+    height: 200px; }
+  .divImg {
+    width: 60%; }
+  .imgTitulo {
+    height: 200px; }
+  .seccionComunidad {
+    width: 90%; }
+  .videos {
+    width: 85%; }
+  .divT {
+    height: 200px; }
+  #seccionComunidad, #seccionComunidadDos, #seccionComunidadTres {
+    width: 90%; }
+  .comunidadDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  /*Cierre de Comunidad*/
+  /*Contacto*/
+  .sectionC {
+    width: 90%;
+    height: 300px; }
+  .mapa {
+    height: 200px;
+    width: 50%; }
+  .encontranosGrid {
+    width: 50%; }
+  #tamañoC {
+    font-size: 13px; }
+  .sectionCon {
+    width: 80%; }
+  /*Cierre de contacto*/
+  /*pie de pagina*/
+  footer {
+    height: 300px; }
+    footer #tamañoFooter {
+      font-size: 13px; }
+    footer p {
+      font-size: 15px; }
+    footer .pieDisplay {
+      height: 300px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      grid-template-areas: "categorias contacto" "redes redes"; }
+      footer .pieDisplay #redes {
+        grid-area: redes;
+        justify-self: center; }
+      footer .pieDisplay #categoria {
+        grid-area: categorias; }
+      footer .pieDisplay #contacto {
+        grid-area: contacto; }
+      footer .pieDisplay .navFooter {
+        font-size: 10px;
+        font-family: 'Noto Sans TC', sans-serif; }
+        footer .pieDisplay .navFooter .list {
+          text-align: center; }
+  /*Cierre de pie*/ }
+
+/*Tablet*/
+@media only screen and (min-width: 600px) {
+  /*Titulos y Subtitulos*/
+  h2 {
+    font-size: 25px; }
+  h1 {
+    font-size: 45px; }
+  h3 {
+    font-size: 25px; }
+  /*Main*/
+  .home {
+    height: 1100px; }
+  .seccionP__contenedor {
+    margin-left: 100px; }
+  .seccionP {
+    height: 600px; }
+  /*Cierre de Main*/
+  /*Proyectos*/
+  .tamaño {
+    font-size: 15px;
+    text-align: left; }
+  #anchoC {
+    height: 300px; }
+  .proyectoDisplay {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    height: 1500px; }
+  /*Cierre proyectos*/
+  /*Nosotros*/
+  .imgNosotros {
+    height: 170px; }
+  h2 {
+    margin-bottom: 50px; }
+  /*Cierre de nosotros*/
+  /*Comunidad*/
+  .videos {
+    width: 80%; }
+  .comunidadFlex {
+    height: 2200px; }
+  .comunidadDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .divT {
+    height: 200px; }
+  .divImg {
+    height: 200px; }
+    .divImg .imgTitulo {
+      height: 200px; }
+  /*Pie de pagina*/
+  .pieDisplay {
+    padding-top: 20px; } }
+
+/*Computadora*/
+@media only screen and (min-width: 992px) {
+  /*Nosotros*/
+  #sectionN {
+    width: 25%;
+    height: 350px; }
+  .imgNosotros {
+    height: 230px;
+    padding-top: 10px; }
+  #ancho {
+    width: 75%; }
+  .divT {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  /*Cierre de nosotros*/
+  /*Home*/
+  .home {
+    height: 1100px; }
+  .seccionP__contenedor {
+    margin-left: 100px; }
+  .seccionP {
+    height: 600px; }
+  /*Cierre de main*/
+  /*Proyectos*/
+  .seccionDisplay {
+    width: 65%;
+    grid-template-columns: 40% 40%;
+    justify-content: center; }
+  #proyectoMedia:hover {
+    cursor: pointer;
+    background-color: #cbeecd; }
+  .tamaño {
+    text-align: left; }
+  .proyectoDisplay {
+    height: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 40%;
+    grid-template-areas: "M R" "F A";
+    justify-content: space-evenly;
+    align-items: center; }
+  #Mediterraneo {
+    grid-area: M;
+    height: 276px; }
+  #Mediterraneo:hover {
+    cursor: pointer !important; }
+  #Romantico {
+    grid-area: R;
+    height: 276px; }
+  #Fenshui {
+    grid-area: F;
+    height: 276px; }
+  #Arabe {
+    grid-area: A; }
+  #imgProyectos {
+    height: 276px; }
+  #parrafo {
+    font-size: 15px;
+    text-align: left; }
+  #anchoC {
+    height: 280px; }
+  /*Comunidad*/
+  .videos {
+    width: 90% !important;
+    height: 200px; }
+  #seccionComunidad, #seccionComunidadDos, #seccionComunidadTres {
+    width: 30%; }
+  .comunidadDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  .comunidadFlex {
+    height: 1300px; }
+  .divT {
+    height: 400px; }
+  .divImg {
+    height: 400px; }
+    .divImg .imgTitulo {
+      height: 400px; }
+  .tituloFlex {
+    height: 400px; }
+  /*Pie de pagina*/
+  .pieDisplay {
+    padding-top: 20px; } }

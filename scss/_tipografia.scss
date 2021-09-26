@@ -1,0 +1,63 @@
+/*titulos y subtitulos*/
+
+@mixin estiloTitulos($color, $font, $tamanio, $textAlign) {
+    color: $color;
+    text-align: $textAlign;
+    font-family: $font;
+    font-size: $tamanio;
+    
+}
+h1{
+    @include estiloTitulos(black, $fontFamilyDos,50px,center);
+    font-weight: lighter;
+}
+
+h2{
+    @include estiloTitulos(rgb(9, 26, 77), $fontFamilyDos,35px, center);
+    margin-top: 15px;
+}
+
+h3{
+    @include estiloTitulos(black, $fontFamilyCuatro,30px,justify );
+    font-weight: bolder;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+.tituloSecciones{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.centrado{
+    text-align: center;
+}
+#centrado{
+    text-align: center;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: justify;
+}
+.tamañoFooter{
+    font-size: 20px;
+}
+
+.tituloPrincipal{
+    font-size: 100px;
+    text-align: left;
+    font-family: 'Poiret One', cursive;
+    color: black;
+}
+.parrafo{
+    text-align: center;
+    font-size: $parrafoChico;
+    font-family: 'Roboto', sans-serif;
+}

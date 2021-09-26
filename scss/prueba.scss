@@ -1,0 +1,721 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import "variables";
+@import "tipografia";
+@import "layout";
+
+
+/*Diseño Home*/
+.home{
+    width: 100%;
+    .seccionP{
+        background: url(../assets/home/fondo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%; 
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: left;
+        
+        &__contenedor{ 
+            margin-bottom: 80px;        
+        }   
+    }
+    .seccionS{
+        background-color:$colorDos ;
+        height: 130px;
+        width: 30%;
+        position: relative;
+        bottom: 70px;
+        float: right;
+        right: 250px;
+    }
+    .seccionT{
+        background-color: $colorUno;
+        height: 500px;
+        width: 100%;
+        #servicioDisplay{
+            color:$colorCuatro;
+            height:300px;
+            width: 80%;
+            margin:auto;
+            display: grid;
+            grid-template-columns: 20% 20% 20%;
+            grid-template-rows: 20% 60%;
+            grid-template-areas: "iconUno  iconDos iconTres"
+                        "textoUno  textoDos  textoTres";
+            justify-items: center;
+            justify-content: space-between;
+            #iconDiseño{
+                grid-area: iconUno;
+                font-size: 40px;
+            }
+            
+            #iconDiseño:hover{
+                color: green;
+                cursor: pointer;
+            }
+            
+            #iconCalendario{
+                grid-area: iconDos;
+                font-size: 40px;
+            }
+            
+            #iconCalendario:hover{
+                color: green;
+                cursor: pointer;
+            }
+            
+            #iconPlanta{
+                grid-area: iconTres;
+                font-size: 40px;
+            }
+            
+            #iconPlanta:hover{
+                color: green;
+                cursor: pointer;
+            }
+            
+            #textoDiseño{
+                grid-area: textoUno;
+            }
+            
+            #textoCalendario{
+                grid-area: textoDos;
+            }
+            #textoPlata{
+                grid-area: textoTres;
+            }
+        }
+    }
+}
+
+/*Proyectos*/
+.proyectoDisplay{
+    height: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 40%;
+    grid-template-areas: "M R"
+                        "F A";
+    justify-content: space-evenly;
+    align-items: center;
+    #Mediterraneo{
+        grid-area: M;
+        height: 276px;
+    }   
+    #Romantico{
+        grid-area: R;
+        height: 276px;
+    }   
+    #Fenshui{
+        grid-area: F;
+        height: 276px;
+    }   
+    #Arabe{
+        grid-area: A;
+        height: 276px;
+    }   
+    #imgProyectos{
+        height: 275px;
+    }
+    #parrafo{
+        font-size: 15px;
+    }
+}
+.sectionTabla{
+    background-color: rgb(72, 122, 72);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    #tabla{
+        height: 300px;
+        width: 80%;
+        padding-top: 50px;
+    }
+}
+/*Cierre de proyectos*/
+
+/*Diseño Comunidad*/
+.comunidadFlex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1400px;
+    .tituloFlex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.445);
+        background-color: white;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        .divT{
+            width: 50%;
+        }
+        .divImg{
+            width: 40%;
+            .imgTitulo{
+                width: 100%;
+            }
+        }
+    }
+}
+#seccionComunidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 550px;
+    box-shadow: 0px 0px 5px 0px rgba(128, 82, 82, 0.288);
+    margin-bottom: 30px;
+    background-color: rgb(136, 173, 136);
+    .videos{
+        width: 40%;
+        height: 300px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        padding: 10px 0px 10px 0px;
+    }
+    
+}
+#seccionComunidadDos{
+    @extend #seccionComunidad;
+    background-color: $colorDos;
+
+}
+#seccionComunidadTres{
+    @extend #seccionComunidad;
+    background-color: rgb(94, 119, 94);
+    
+}
+/*Cierre de comunidad*/
+
+/*Nosotros*/
+.sectionColumnas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    .divFila{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }   
+}
+#sectionN{
+    margin-bottom: 40px;
+    width: 30%;
+    box-shadow: 0px 0px 5px 0px rgba(65, 46, 46, 0.288);
+}
+.imgNosotros{
+    width: 82%;
+    height: 350px;
+}
+/*Cierre de Nosotros*/
+
+/*Contacto*/
+.contactoFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .sectionC{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        height: 400px;
+        box-shadow: 0px 0px 5px 0px rgba(128, 82, 82, 0.288);
+        margin: auto;
+        .mapa{
+            width: 50%;
+            height: 300px;
+        }
+        .encontranosGrid{
+            height: 200px;
+            width: 50%;
+            display: grid;
+            grid-template-columns: 10% 90%;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "titulo titulo"
+                                "iconD direccion"
+                                "iconT telefono"
+                                "iconM  mail";
+            .telefono{
+                grid-area: telefono;
+                padding-left: 10px;
+            }
+            .tituloC{
+                grid-area: titulo;
+                font-size: 20px;
+                text-align: center;
+            }
+            .direccion{
+                grid-area: direccion;
+                padding-left: 10px;
+            }
+            .mail{
+                grid-area: mail;
+                padding-left: 10px;
+            }
+            #iconD{
+                grid-area: iconD;
+            }
+            #iconT{
+                grid-area: iconT;
+            }
+            #iconM{
+                grid-area: iconM;
+            }
+            #iconD:hover{
+                color: green;
+                cursor: pointer;
+            }
+            #iconT:hover{
+                color: green;
+            cursor: pointer;
+            }
+            #iconM:hover{
+            color: green;
+            cursor: pointer;
+            }
+        }
+    }
+    .sectionCon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 60px 0px 60px 0px;
+        box-shadow: 0px 0px 5px 0px rgba(128, 82, 82, 0.288);
+        width: 50%;
+        .sectionInfo{
+            width: 75%;
+            margin-top: 15px;
+            margin-left: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+/*Cierre de contacto*/
+
+/*icono de wpp*/
+.wpp{
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    .imgWpp{
+        width: 45px;
+        height: 45px;
+    }
+    .imgWpp:hover{
+        transform: scale(1.1);
+        transition:0.3s;
+    }
+}
+
+/*Cierre de icono de wpp*/
+/*Celular*/
+@media only screen and (max-width: 600px ){
+    
+    /*Encabezado*/
+    #tamaño{
+        font-size: 11px;
+    }
+    .logo{
+        height: 35px;
+    }
+    /*Cierre de encabezado*/
+    /*Titulos y subtitulos*/
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    /*Home*/
+    .home{
+        height: 900px;
+    }
+    .subtitulo{
+        padding-top: 5px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .tituloTamaño{
+        font-size: 25px;
+    }
+    .seccionP{
+        margin-left: none;
+        height: 400px;
+    }
+    .imgWpp{
+        height: 30px;
+        width: 30px;
+    }
+    .wpp{
+        height: 35px;
+        width: 35px;
+    }
+    /*Cierre de home*/
+    /*Proyectos*/
+    .proyectoDisplay{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 2000px;
+        width: 90%;
+        margin-left: 15px;
+    }
+    #proyectoMedia{
+        height: 430px;
+        width: 100% !important;
+    }
+    #imgProyecto{
+        height: 250px;
+    }
+    #anchoC{
+        width: 50%;
+        height: 250px;
+    }
+    #parrafo{
+        font-size: 10px !important;
+        text-align: left;
+    }
+    #carouselExampleSlidesOnly{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /*Cierre de proyectos*/
+    /*Nosotros*/
+    .divFila{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionN{
+        width: 80%;
+    }
+    .imgNosotros{
+        height: 250px;
+        width: 70%;
+    }
+    /*Cierre de Nosotros*/
+
+    /*Comunidad*/
+    .comunidadFlex{
+        height: auto;
+    }
+    .tituloFlex{
+        height: 200px;
+    }
+    .divImg{
+        width: 60%;
+    }
+    .imgTitulo{
+        height: 200px;
+    }
+    .seccionComunidad{
+        width: 90%;
+    }
+    .videos{
+        width: 85%;
+    }
+    .divT{
+        height: 200px;
+    }
+    #seccionComunidad{
+        width: 90%;
+    }
+    .comunidadDisplay{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Cierre de Comunidad*/
+
+    /*Contacto*/
+    .sectionC{
+        width: 90%;
+        height: 300px;
+    }
+    .mapa{
+        height: 200px;
+        width: 50%;
+    }
+    .encontranosGrid{
+        width: 50%;
+    }
+    #tamañoC{
+        font-size: 13px;
+    }
+    .sectionCon{
+        width: 80%;
+    }
+    /*Cierre de contacto*/
+
+    /*pie de pagina*/  
+    footer{
+        height: 300px;
+        #tamañoFooter{
+            font-size: 13px;
+        }      
+        p{
+            font-size: 15px;
+        }
+        .pieDisplay{
+            height: 300px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: "categorias contacto"
+                                "redes redes";
+            #redes{
+            grid-area: redes;
+            justify-self: center;
+            }
+            #categoria{
+                grid-area: categorias;
+            }
+            #contacto{
+                grid-area: contacto;
+            }
+            .navFooter{
+                font-size: 10px;
+                font-family: 'Noto Sans TC', sans-serif;
+                .list{
+                    text-align: center;
+                }
+            }
+        }
+    }   
+    /*Cierre de pie*/
+}
+
+/*Tablet*/
+@media only screen and (min-width: 600px){
+    /*Titulos y Subtitulos*/
+    h2{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 25px; 
+    }
+    /*Main*/
+    .home{
+        height: 1100px;
+    }
+    .seccionP__contenedor{
+        margin-left: 100px;
+    }
+    .seccionP{
+        height: 600px;
+    }
+    /*Cierre de Main*/
+
+    /*Proyectos*/
+    .tamaño{
+        font-size: 15px;
+        text-align: left;
+    }
+    #anchoC{
+        height: 300px;
+    }
+    .proyectoDisplay{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        height: 1500px;
+    }
+    /*Cierre proyectos*/
+
+    /*Nosotros*/
+    .imgNosotros{
+        height: 170px;
+    }
+    h2{
+        margin-bottom: 50px;
+    }
+    /*Cierre de nosotros*/
+
+    /*Comunidad*/
+    .videos{
+        width: 80%;
+    }
+    .comunidadFlex{
+        height: 2200px;
+    }
+    .comunidadDisplay{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .divT{
+        height: 200px;
+    }
+    .divImg{
+        height: 200px;
+        .imgTitulo{
+            height: 200px;
+        }
+    }
+    /*Pie de pagina*/
+    .pieDisplay{
+        padding-top: 20px;
+    }
+}
+
+/*Computadora*/
+@media only screen and (min-width:992px){
+
+    /*Nosotros*/
+    #sectionN{
+        width: 25%;
+        height: 350px;
+    }
+    .imgNosotros{
+        height: 230px;
+        padding-top: 10px;
+    }
+    #ancho{
+        width: 75%;
+    }
+    .divT{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Cierre de nosotros*/
+
+    /*Home*/
+    .home{
+        height: 1100px;
+    }
+    .seccionP__contenedor{
+        margin-left: 100px;
+    }
+    .seccionP{
+        height: 600px;
+    }
+    /*Cierre de main*/
+
+    /*Proyectos*/
+    .seccionDisplay{
+        width: 65%;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+    }
+    #proyectoMedia:hover{
+        cursor: pointer;
+        background-color: rgb(203, 238, 205);
+    }
+    .tamaño{
+        text-align: left;
+    }
+    .proyectoDisplay{
+        height: 800px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 40% 40%;
+        grid-template-areas: "M R"
+                            "F A";
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #Mediterraneo{
+        grid-area: M;
+        height: 276px;
+    }
+    #Mediterraneo:hover{
+        cursor:pointer !important;
+    }
+    #Romantico{
+        grid-area: R;
+        height: 276px;
+    }
+    #Fenshui{
+        grid-area: F;
+        height: 276px;
+    }
+    #Arabe{
+        grid-area: A;
+    }
+    #imgProyectos{
+        height: 276px;
+    }
+    #parrafo{
+        font-size: 15px;
+        text-align: left;
+    }
+    #anchoC{
+        height: 280px;
+    }
+    /*Comunidad*/
+    .videos{
+        width: 90% !important;
+        height: 200px;
+    }
+    #seccionComunidad{
+        width: 30%;
+    }
+    .comunidadDisplay{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .comunidadFlex{
+        height: 1300px;
+    }
+    .divT{
+        height: 400px;
+    }
+    .divImg{
+        height: 400px;
+        .imgTitulo{
+            height: 400px;
+        }
+    }
+    .tituloFlex{
+        height: 400px;
+    }
+    /*Pie de pagina*/
+    .pieDisplay{
+        padding-top: 20px;
+    }
+}
+
+

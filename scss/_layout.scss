@@ -1,0 +1,120 @@
+/*Diseño del NavBar*/
+#linkColor:hover{
+    color: $colorTres;
+}
+#colorNav{
+    background-color: #0808080d;
+}
+.navbar-collapse{
+    justify-content: right;
+}
+
+/*Cierre del NavBar*/
+
+/*Pie de pagina*/
+footer{
+    background-color: rgb(18, 26, 1);
+    width: 100%;
+    height: 190px;
+    .pieDisplay{
+        color:rgb(96, 96, 77) ;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        #tamañoFooter{
+            font-size: 15px;
+        }
+        .color{
+            color:rgb(96, 96, 77) ;
+        }
+        .contactoGrid{
+            height: 100px;
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "titulo titulo"
+                                "iconD direccion"
+                                "iconT telefono"
+                                "iconM  mail";
+            .telefono{
+                grid-area: telefono;
+                padding-left: 10px;
+            }
+            .tituloC{
+                grid-area: titulo;
+                font-size: 20px;
+                text-align: center;
+            }
+            .direccion{
+                grid-area: direccion;
+                padding-left: 10px;
+            }
+            .mail{
+                grid-area: mail;
+                padding-left: 10px;
+            }
+            #iconD{
+                grid-area: iconD;
+            }
+            #iconT{
+                grid-area: iconT;
+            }
+            #iconM{
+                grid-area: iconM;
+            }
+            #iconD:hover{
+                color: green;
+                cursor: pointer;
+            }
+            #iconT:hover{
+                color: green;
+            cursor: pointer;
+            }
+            #iconM:hover{
+            color: green;
+            cursor: pointer;
+            }
+        
+        }
+        .redesFlex{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            width: 100%;
+            .botonRedes{
+                font-size: 30px;
+            }
+            .botonRedes:hover{
+                color: green;
+                cursor: pointer;
+            }
+        }
+        .navFooter{
+            font-family: 'Roboto', sans-serif;
+            font-weight: bolder;
+            font-size: 15px;
+            padding-left: 20px;
+            .list{
+                list-style: none;
+                #lineaFooter{
+                    text-decoration: none;
+                }
+            }         
+        }    
+    }
+}
+.encontranos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    width: 30%;
+}
+/*Cierre de pie de pagina*/
+
+
+
+
+
+
