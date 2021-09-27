@@ -50,11 +50,14 @@ p {
 .tamañoFooter {
   font-size: 20px; }
 
-.tituloPrincipal {
-  font-size: 100px;
+.tituloPrincipal, .subtituloPrincipal {
+  font-size: 120px;
   text-align: left;
   font-family: 'Poiret One', cursive;
   color: black; }
+
+.subtituloPrincipal {
+  font-size: 40px; }
 
 .parrafo {
   text-align: center;
@@ -162,7 +165,7 @@ footer {
     justify-content: center;
     align-items: left; }
     .home .seccionP__contenedor {
-      margin-bottom: 80px; }
+      margin-top: 15px; }
   .home .seccionS {
     background-color: #68a368;
     height: 130px;
