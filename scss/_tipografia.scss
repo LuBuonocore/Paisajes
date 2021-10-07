@@ -13,7 +13,7 @@ h1{
 }
 
 h2{
-    @include estiloTitulos(rgb(9, 26, 77), $fontFamilyDos,35px, center);
+    @include estiloTitulos(black, $fontFamilyCinco,40px, center);
     margin-top: 15px;
 }
 
@@ -21,31 +21,35 @@ h3{
     @include estiloTitulos(black, $fontFamilyCuatro,30px,justify );
     font-weight: bolder;
 }
-
-.subtitulo{
+.titulosPages{
+    text-align: left;
     color: white;
-    font-size: 50px;
-    font-weight: lighter;
-    text-align: center;
-    font-family: 'EB Garamond', serif;
+    font-size:  70px; 
+    margin-left: 80px;
 }
+
 .tituloSecciones{
     margin-top: 35px;
     margin-bottom: 35px;
 }
-
+.subNosotros{
+    font-size: 40px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
 .centrado{
     text-align: center;
 }
 #centrado{
     text-align: center;
 }
-
-p{
-    font-size: 18px;
-    font-family: 'Noto Sans TC', sans-serif;
-    text-align: justify;
+.subtitulo{
+    color: white;
+    text-align: center;
+    font-family:'Poiret One', cursive; 
+    font-size: 30px;
 }
+
 .tamañoFooter{
     font-size: 20px;
 }
@@ -64,4 +68,15 @@ p{
     text-align: center;
     font-size: $parrafoChico;
     font-family: 'Roboto', sans-serif;
+}
+.tamañoP{
+    font-size: 55px;
+}
+#textoP{
+    font-size: $fontFamilyCinco;
+}
+p{
+    font-size: 18px;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: justify;
 }

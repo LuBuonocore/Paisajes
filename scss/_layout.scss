@@ -2,8 +2,17 @@
 #linkColor:hover{
     color: $colorTres;
 }
+#linkColorPages{
+    color: white !important;
+}
+#linkColorPages:hover{
+    color: $colorTres !important;
+}
 #colorNav{
     background-color: #0808080d;
+}
+#colorNavPages{
+    background-color: $colorUno;
 }
 .navbar-collapse{
     justify-content: right;
