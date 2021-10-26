@@ -67,7 +67,7 @@ h3 {
 .parrafo {
   text-align: center;
   font-size: 15px;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .tamañoP {
   font-size: 55px; }
@@ -79,6 +79,22 @@ p {
   font-size: 18px;
   font-family: 'Noto Sans TC', sans-serif;
   text-align: justify; }
+
+#tituloEvento {
+  font-size: 27px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #68a368; }
+
+.colorFecha {
+  color: #68a368; }
+
+.estilo {
+  font-size: 20px;
+  font-style: oblique;
+  color: #68a368;
+  margin-top: 65px; }
 
 /*Diseño del NavBar*/
 #linkColor:hover {
@@ -115,6 +131,8 @@ footer {
       font-size: 15px; }
     footer .pieDisplay .color {
       color: #60604d; }
+    footer .pieDisplay .color:hover {
+      color: green; }
     footer .pieDisplay .contactoGrid {
       height: 100px;
       display: grid;
@@ -156,7 +174,9 @@ footer {
       width: 100%; }
       footer .pieDisplay .redesFlex .botonRedes {
         font-size: 30px; }
-      footer .pieDisplay .redesFlex .botonRedes:hover {
+        footer .pieDisplay .redesFlex .botonRedes .botonColor {
+          color: #60604d; }
+      footer .pieDisplay .redesFlex .botonColor:hover {
         color: green;
         cursor: pointer; }
     footer .pieDisplay .navFooter {
@@ -378,6 +398,44 @@ footer {
 #seccionComunidadTres {
   background-color: #5e775e; }
 
+.evento {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #273b27; }
+  .evento__contenedor {
+    height: 400px;
+    width: 90%; }
+    .evento__contenedor #evento__card {
+      height: 350px; }
+      .evento__contenedor #evento__card #evento__contenido {
+        height: 350px; }
+        .evento__contenedor #evento__card #evento__contenido #evento__img {
+          height: 350px; }
+          .evento__contenedor #evento__card #evento__contenido #evento__img #evento__tamañoImg {
+            height: 348px; }
+        .evento__contenedor #evento__card #evento__contenido #evento__texto {
+          height: 350px;
+          width: 60%; }
+
+.evento__iconoDisplay {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 60%; }
+  .evento__iconoDisplay #evento__icono {
+    height: 30px;
+    width: 10%; }
+  .evento__iconoDisplay #evento__icono:hover {
+    color: #68a368;
+    cursor: pointer; }
+
+.evento__botonDisplay {
+  display: flex;
+  justify-content: end; }
+
 /*Cierre de comunidad*/
 /*Nosotros*/
 .sectionColumnas {
@@ -398,6 +456,26 @@ footer {
 .imgNosotros {
   width: 82%;
   height: 350px; }
+
+.ideaContenedor {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .ideaContenedor .ideaImagen, .ideaContenedor .ideaImagen .tamañoImg {
+    height: 450px;
+    width: 50%;
+    display: flex;
+    justify-content: center; }
+    .ideaContenedor .ideaImagen .tamañoImg {
+      width: 90%; }
+  .ideaContenedor .ideaTexto {
+    width: 40%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left; }
 
 /*Cierre de Nosotros*/
 /*Contacto*/
@@ -509,9 +587,9 @@ footer {
     font-size: 25px;
     text-align: center; }
   .tituloPrincipal, .subtituloPrincipal {
-    font-size: 70px; }
+    font-size: 50px; }
   .subtituloPrincipal {
-    font-size: 40px; }
+    font-size: 20px; }
   /*Home*/
   .home {
     height: 900px; }
@@ -593,6 +671,20 @@ footer {
   .imgNosotros {
     height: 250px;
     width: 70%; }
+  .ideaContenedor {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .ideaContenedor .ideaImagen, .ideaContenedor .ideaImagen .tamañoImg {
+      height: 250px;
+      width: 90%;
+      margin-top: 40px; }
+    .ideaContenedor .ideaTexto {
+      height: 450px;
+      width: 90%;
+      margin-top: 50px; }
   /*Cierre de Nosotros*/
   /*Comunidad*/
   .comunidadFlex {
@@ -618,6 +710,29 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+  .evento {
+    height: 900px;
+    width: 100%; }
+    .evento__contenedor {
+      height: 800px;
+      width: 90%; }
+      .evento__contenedor #evento__card {
+        height: 750px; }
+        .evento__contenedor #evento__card #evento__contenido {
+          min-height: 200px; }
+          .evento__contenedor #evento__card #evento__contenido #evento__img {
+            height: 200px;
+            display: flex;
+            justify-content: center; }
+            .evento__contenedor #evento__card #evento__contenido #evento__img #evento__tamañoImg {
+              height: 200px; }
+          .evento__contenedor #evento__card #evento__contenido #evento__texto {
+            height: 350px;
+            width: 100%; }
+  .evento__iconoDisplay {
+    width: 80%; }
+  #responsiveTamaño {
+    width: 80% !important; }
   /*Cierre de Comunidad*/
   /*Contacto*/
   .titulosPages {
@@ -645,7 +760,7 @@ footer {
   footer {
     height: 300px; }
     footer #tamañoFooter {
-      font-size: 13px; }
+      font-size: 12px !important; }
     footer p {
       font-size: 15px; }
     footer .pieDisplay {
@@ -730,6 +845,24 @@ footer {
     height: 200px; }
     .divImg .imgTitulo {
       height: 200px; }
+  .evento {
+    height: 500px; }
+    .evento__contenedor {
+      height: 400px; }
+      .evento__contenedor #evento__card {
+        height: 300px; }
+        .evento__contenedor #evento__card #evento__contenido {
+          height: 300px; }
+          .evento__contenedor #evento__card #evento__contenido #evento__img {
+            height: 300px; }
+            .evento__contenedor #evento__card #evento__contenido #evento__img #evento__tamañoImg {
+              height: 298px; }
+          .evento__contenedor #evento__card #evento__contenido #evento__texto {
+            height: 300px; }
+            .evento__contenedor #evento__card #evento__contenido #evento__texto .card-body #tituloEvento {
+              font-size: 20px; }
+            .evento__contenedor #evento__card #evento__contenido #evento__texto .card-body p {
+              font-size: 15px; }
   /*Pie de pagina*/
   .pieDisplay {
     padding-top: 20px; } }
@@ -739,9 +872,9 @@ footer {
   /*Nosotros*/
   #sectionN {
     width: 25%;
-    height: 350px; }
+    height: 390px; }
   .imgNosotros {
-    height: 250px;
+    height: 260px;
     padding-top: 10px; }
   #ancho {
     width: 75%; }
@@ -758,6 +891,11 @@ footer {
     margin-left: 100px; }
   .seccionP {
     height: 600px; }
+  .tituloPrincipal, .subtituloPrincipal {
+    font-size: 100px; }
+  .subtituloPrincipal {
+    font-size: 40px;
+    margin-top: 20px; }
   /*Cierre de main*/
   /*Proyectos*/
   .tamaño {
@@ -784,7 +922,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly; }
   .comunidadFlex {
-    height: 1300px; }
+    height: 1200px; }
   .divT {
     height: 400px; }
   .divImg {
@@ -793,6 +931,28 @@ footer {
       height: 400px; }
   .tituloFlex {
     height: 400px; }
+  .evento__contenedor {
+    width: 80%;
+    height: 400px; }
+  .evento {
+    height: 500px; }
+    .evento__contenedor {
+      height: 400px;
+      width: 90%; }
+      .evento__contenedor #evento__card {
+        height: 350px; }
+        .evento__contenedor #evento__card #evento__contenido {
+          height: 350px; }
+          .evento__contenedor #evento__card #evento__contenido #evento__img {
+            height: 350px; }
+            .evento__contenedor #evento__card #evento__contenido #evento__img #evento__tamañoImg {
+              height: 348px; }
+          .evento__contenedor #evento__card #evento__contenido #evento__texto {
+            height: 350px; }
+            .evento__contenedor #evento__card #evento__contenido #evento__texto .card-body #tituloEvento {
+              font-size: 30px; }
+            .evento__contenedor #evento__card #evento__contenido #evento__texto .card-body p {
+              font-size: 18px; }
   /*Pie de pagina*/
   .pieDisplay {
     padding-top: 20px; } }

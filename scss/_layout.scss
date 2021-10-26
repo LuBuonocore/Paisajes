@@ -37,6 +37,9 @@ footer{
         .color{
             color:rgb(96, 96, 77) ;
         }
+        .color:hover{
+            color: green;
+        }
         .contactoGrid{
             height: 100px;
             display: grid;
@@ -93,8 +96,11 @@ footer{
             width: 100%;
             .botonRedes{
                 font-size: 30px;
+                .botonColor{
+                    color:rgb(96, 96, 77);
+                }
             }
-            .botonRedes:hover{
+            .botonColor:hover{
                 color: green;
                 cursor: pointer;
             }

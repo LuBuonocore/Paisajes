@@ -13,8 +13,7 @@
     <script src="https://kit.fontawesome.com/768d96e9f1.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/pruebacss.css">
+    <link rel="stylesheet" href="../css/stylecss.css">
     <meta name="keywords" content="PAISAJISMO, MODERNO, DISEÑOS UNICOS, PLANTAS SUSTENTABLES ">
     <title>Consejos, tips, y charlas sobre paisajes, paisajismo, y cómo cuidar tus plantas.</title>
     <meta name="description" content="Paisajistas, diseñadores y profesionales en el tema de diseño de paisajes. Te mantenemos informado de las noticias sobre paisajismo más importantes.">
@@ -78,8 +77,60 @@
                 <p id="centrado" class="tamaño">Te brindamos un articulo muy practico e interesante en donde explican como poder cuidar de tus plantas adecuadamente. Las plantas son parte esencial de lograr que tu espacio se sienta fresco y estético.</p>
                 <button type="button" class="btn btn-success btn-sm">Ver más..</button>
             </section>
+            </section>          
+        </section>
+        <!--Seccion Evento-->
+        <section class="evento">
+            <section class="evento__contenedor">
+                <div class="card mb-3" id="evento__card">
+                    <div id="evento__contenido" class="row g-0">
+                        <!--Imagen-->
+                        <div id="evento__img" class="col-md-4">
+                            <img id="evento__tamañoImg" src="../assets/comunidad/event-venue-ga0a97e1d8_640.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <!--Texto-->
+                        <div id="evento__texto" class="col-md-8">
+                            <div class="card-body">
+                                <h5 id="tituloEvento" class="card-title">¡Volvemos con otra edición de Aprende con Paisajes!</h5>
+                                <p class="card-text">Seminario con grandes profesionales sobre todo lo que tenes que tener en cuenta a la hora de participar en el arte del paisajismo. Es un espacio en donde compartimos todos nuestros consejos y saberes sobre la profesión. Cuenta con 3 seminarios diferentes de 2 horas cada uno.</p>
+                                <div class="evento__iconoDisplay">
+                                    <svg id="evento__icono" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                    </svg>
+                                    <p class="colorFecha">Diciembre 19 a las 11hs</p>
+                                </div> 
+                                <!--Boton de Reserva-->
+                                <div class="evento__botonDisplay">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar mi lugar</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div id="responsiveTamaño" class="modal-dialog">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Contactanos!</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h6>Ingresa tu mail y te enviaremos más información al respecto!</h6>
+                                                <div class="mb-3">
+                                                    <input type="email" class="form-control" width="40%" id="exampleFormControlInput1" placeholder="paisajesIdeales@gmail.com">
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                                <button type="button" class="btn btn-success">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!--Cierre de Boton de Reserva-->  
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            
         </section>
         <div class="wpp">
             <img class="imgWpp" src="../assets/logo/wpp.png" alt="icono de whatsapp">
@@ -112,9 +163,8 @@
             <section id="redes">
                 <h4 class="tamañoFooter">Seguinos en nuestras redes</h4>
                 <section class="redesFlex">
-                    <div class="botonRedes"><i class="fab fa-instagram"></i></div>
-                    <div class="botonRedes"><i class="fab fa-facebook-square"></i></div>
-                    <div class="botonRedes"><i class="fab fa-twitter-square"></i></div>
+                    <div class="botonRedes"><a class="botonColor" href="https://www.instagram.com/paisajesidealesok/?hl=es-la"><i class="fab fa-instagram"></i></a></div>
+                    <div class="botonRedes"><a class="botonColor" href="https://www.facebook.com/profile.php?id=100073858437081"><i class="fab fa-facebook-square"></i></a></div>
                 </section>
             </section>
         </section>

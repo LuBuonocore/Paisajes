@@ -198,8 +198,7 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(240, 239, 239);
-}
-
+    }
 /*Cierre de proyectos*/
 
 /*Diseño Comunidad*/
@@ -259,6 +258,52 @@
     background-color: rgb(94, 119, 94);
     
 }
+.evento{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $colorUno;
+    &__contenedor{
+        height: 400px;
+        width: 90%;
+        #evento__card{
+            height: 350px;
+            #evento__contenido{
+                height: 350px;
+                #evento__img{
+                    height: 350px;
+                    #evento__tamañoImg{
+                        height: 348px;
+                    }
+                }
+                #evento__texto{
+                    height: 350px;
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+.evento__iconoDisplay{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 60%;
+    #evento__icono{
+        height: 30px;
+        width: 10%;
+    }
+    #evento__icono:hover{
+        color: $colorDos;
+        cursor: pointer;
+    }
+}
+.evento__botonDisplay{
+    display: flex;
+    justify-content: end;
+}
 /*Cierre de comunidad*/
 
 /*Nosotros*/
@@ -283,6 +328,31 @@
     width: 82%;
     height: 350px;
 }
+.ideaContenedor{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .ideaImagen{
+        height: 450px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        .tamañoImg{
+            @extend .ideaImagen;
+            width: 90%;
+        }
+    }
+    .ideaTexto{
+        width: 40%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+}
+
 /*Cierre de Nosotros*/
 
 /*Contacto*/
@@ -423,10 +493,10 @@
         text-align: center;
     }
     .tituloPrincipal{
-        font-size: 70px;
+        font-size: 50px;
     }
     .subtituloPrincipal{
-        font-size: 40px;
+        font-size: 20px;
     }
     /*Home*/
     .home{
@@ -548,6 +618,23 @@
         height: 250px;
         width: 70%;
     }
+    .ideaContenedor{
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .ideaImagen{
+            height: 250px;
+            width: 90%;
+            margin-top: 40px;
+        }
+        .ideaTexto{
+            height: 450px;
+            width: 90%;
+            margin-top: 50px;
+        }
+    }
     /*Cierre de Nosotros*/
 
     /*Comunidad*/
@@ -584,6 +671,38 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .evento{
+        height: 900px;
+        width: 100%;
+        &__contenedor{
+            height: 800px;
+            width: 90%;
+            #evento__card{
+                height: 750px;
+                #evento__contenido{
+                    min-height: 200px;
+                    #evento__img{
+                        height: 200px;
+                        display: flex;
+                        justify-content: center;
+                        #evento__tamañoImg{
+                            height: 200px;
+                        }
+                    }
+                    #evento__texto{
+                        height: 350px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .evento__iconoDisplay{
+        width: 80%;
+    }
+    #responsiveTamaño{
+        width: 80% !important;
     }
     /*Cierre de Comunidad*/
 
@@ -623,7 +742,7 @@
     footer{
         height: 300px;
         #tamañoFooter{
-            font-size: 13px;
+            font-size: 12px !important;
         }      
         p{
             font-size: 15px;
@@ -749,6 +868,35 @@
             height: 200px;
         }
     }
+    .evento{
+        height: 500px;
+        &__contenedor{
+            height: 400px;
+            #evento__card{
+                height: 300px;
+                #evento__contenido{
+                    height: 300px;
+                    #evento__img{
+                        height: 300px;
+                        #evento__tamañoImg{
+                            height: 298px;
+                        }
+                    }
+                    #evento__texto{
+                        height: 300px;
+                        .card-body{
+                            #tituloEvento{
+                                font-size: 20px;
+                            }
+                            p{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     /*Pie de pagina*/
     .pieDisplay{
         padding-top: 20px;
@@ -757,14 +905,13 @@
 
 /*Computadora*/
 @media only screen and (min-width:992px){
-
     /*Nosotros*/
     #sectionN{
         width: 25%;
-        height: 350px;
+        height: 390px;
     }
     .imgNosotros{
-        height: 250px;
+        height: 260px;
         padding-top: 10px;
     }
     #ancho{
@@ -788,10 +935,16 @@
     .seccionP{
         height: 600px;
     }
+    .tituloPrincipal{
+        font-size: 100px;
+    }
+    .subtituloPrincipal{
+        font-size: 40px;
+        margin-top: 20px;
+    }
     /*Cierre de main*/
 
     /*Proyectos*/
-   
     .tamaño{
         text-align: left;
     }
@@ -824,7 +977,7 @@
         justify-content: space-evenly;
     }
     .comunidadFlex{
-        height: 1300px;
+        height: 1200px;
     }
     .divT{
         height: 400px;
@@ -838,11 +991,45 @@
     .tituloFlex{
         height: 400px;
     }
+    .evento{
+        &__contenedor{
+            width: 80%;
+            height: 400px;
 
+        }
+    }
+    .evento{
+        height: 500px;
+        &__contenedor{
+            height: 400px;
+            width: 90%;
+            #evento__card{
+                height: 350px;
+                #evento__contenido{
+                    height: 350px;
+                    #evento__img{
+                        height: 350px;
+                        #evento__tamañoImg{
+                            height: 348px;
+                        }
+                    }
+                    #evento__texto{
+                        height: 350px;
+                        .card-body{
+                            #tituloEvento{
+                                font-size: 30px;
+                            }
+                            p{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     /*Pie de pagina*/
     .pieDisplay{
         padding-top: 20px;
     }
 }
-
-

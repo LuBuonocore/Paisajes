@@ -67,7 +67,7 @@ h3{
 .parrafo{
     text-align: center;
     font-size: $parrafoChico;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontFamilyCuatro;
 }
 .tamañoP{
     font-size: 55px;
@@ -79,4 +79,20 @@ p{
     font-size: 18px;
     font-family: 'Noto Sans TC', sans-serif;
     text-align: justify;
+}
+#tituloEvento{
+    font-size: 27px;
+    text-align: center;
+    font-family: $fontFamilyCuatro;
+    font-weight: bold;
+    color: $colorDos;
+}
+.colorFecha{
+    color: $colorDos;
+}
+.estilo{
+    font-size: 20px;
+    font-style: oblique;
+    color: $colorDos;
+    margin-top: 65px;
 }
